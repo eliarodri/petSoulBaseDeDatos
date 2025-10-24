@@ -21,6 +21,7 @@ create table usuario (
     direccion varchar(100) not null,
     telefono varchar(100) not null,
     donador_sponsor boolean not null,
+	privacidad boolean not null,
     rol Enum("ADMIN","USUARIO") not null default "USUARIO",
     id_consulta int,
     id_institucion int,
